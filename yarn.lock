@@ -1179,13 +1179,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@relayx/crypto@npm:^6.1.4, @relayx/crypto@npm:^6.1.5":
-  version: 6.1.5
-  resolution: "@relayx/crypto@npm:6.1.5::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F18823845%2Fpackages%2Fnpm%2F%40relayx%2Fcrypto%2F-%2F%40relayx%2Fcrypto-6.1.5.tgz"
+"@relayx/crypto@npm:^6.2.0, @relayx/crypto@npm:^6.3.2":
+  version: 6.3.2
+  resolution: "@relayx/crypto@npm:6.3.2::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F18823845%2Fpackages%2Fnpm%2F%40relayx%2Fcrypto%2F-%2F%40relayx%2Fcrypto-6.3.2.tgz"
   dependencies:
     bs58: ^5
     jsbi: ^4.3.0
-  checksum: 84a2a094de2147764b63b61ed020fa542168e7c98dde29f337a4bd017049a8c9104680bfa0d324016d231c570798a958ddef866cdfad78f32c84af6c3f1d8865
+  checksum: e205d475fd33a07574b3fd58d086538827e7a46807fdde7996a1c03ac5203895defd60b376498ca3cd181844a8d6e88ed8a252034b45c7af2ead75f80e9bf77a
   languageName: node
   linkType: hard
 
@@ -1198,13 +1198,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@relayx/wallet@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "@relayx/wallet@npm:6.0.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F21274622%2Fpackages%2Fnpm%2F%40relayx%2Fwallet%2F-%2F%40relayx%2Fwallet-6.0.0.tgz"
+"@relayx/wallet@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "@relayx/wallet@npm:7.0.0::__archiveUrl=https%3A%2F%2Fgitlab.com%2Fapi%2Fv4%2Fprojects%2F21274622%2Fpackages%2Fnpm%2F%40relayx%2Fwallet%2F-%2F%40relayx%2Fwallet-7.0.0.tgz"
   dependencies:
-    "@relayx/crypto": ^6.1.4
+    "@relayx/crypto": ^6.2.0
     async-mutex: ^0.2.2
-  checksum: f928573612504d597df221c076a2408f472f17c61c6ca519c3dd864917434d01aa80f42a672cd50c55349f347fc281b2422cba681c273d9539c339472029450f
+  checksum: 9a7b7f2d83db52500740903d46ac4174bd5cac01f5bf84c32b1b6a625555489d5ebf3d3ff59cefda9d622305cb997cb2c4e52e83128e0941e2d27dac25ea58f1
   languageName: node
   linkType: hard
 
@@ -3411,9 +3411,9 @@ __metadata:
     "@parcel/config-webextension": ^2.8.3
     "@parcel/optimizer-data-url": 2.8.3
     "@parcel/transformer-inline-string": 2.8.3
-    "@relayx/crypto": ^6.1.5
+    "@relayx/crypto": ^6.3.2
     "@relayx/frame-messaging": ^1.1.1
-    "@relayx/wallet": ^6.0.0
+    "@relayx/wallet": ^7.0.0
     "@scure/bip32": ^1.3.2
     "@scure/bip39": ^1.2.1
     "@scure/btc-signer": ^1.1.0

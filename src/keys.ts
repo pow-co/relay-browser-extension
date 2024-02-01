@@ -1,4 +1,3 @@
-import PrivateKey from "@relayx/crypto/lib/bitcoin/PrivateKey";
 import {SIGHASH_ALL, SIGHASH_FORKID} from '@relayx/crypto/lib/bitcoin/sighash'
 import { serialize } from '@relayx/crypto/lib/bitcoin/script';
 import BufferWriter from '@relayx/crypto/lib/bitcoin/BufferWriter';
@@ -6,7 +5,6 @@ import { KeyStorage } from "@relayx/wallet/lib/auth";
 import {get, set, clear} from './storage'
 import { getKeys } from "./crypto";
 import { getPublicKey, sign, etc, ProjectivePoint } from '@noble/secp256k1'
-import {hex} from '@scure/base'
 import { toDer } from "./bitcoin/signature";
 import {signMessage} from './crypto'
 import { encrypt , decrypt} from "./ecies";
@@ -39,9 +37,9 @@ const keys: KeyStorage = {
       paymail: (await get<string>('PAYMAIL'))
     }
   },
-  async getRunOwner(): Promise<PrivateKey> {
+  async getRunAddress(): Promise<string> {
     const keys = await getKeys(await this.getEntropy())
-    return new PrivateKey(hex.encode( etc.numberToBytesBE( keys.run)))
+    return keys.runAddress
   },
   async getNextChange(): Promise<[string, number]> {
     const keys = await getKeys(await this.getEntropy())
